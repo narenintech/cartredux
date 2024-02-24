@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { updateCart, deleteFromCart, productDetail } from "./productSlice";
 
-const ProductDetail = ()=>{
+const Productdetail = ()=>{
     const {id} = useParams();
 
     const [detail, setDetail] = useState({});
@@ -86,4 +86,4 @@ const ProductDetail = ()=>{
         </div>
     )
 }
-export default ProductDetail;
+export default Productdetail;

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { setProducts, fetchFromAPI } from './productSlice'
 import Cart from './Cart'
 import Products from './Products'
-import ProductDetail from './productdetail'
+import Productdetail from './productdetail'
 import Home from './Home'
 import Header from './Header'
 import {Routes, Route } from 'react-router-dom'
@@ -24,7 +24,7 @@ function App() {
       <Routes>       
           <Route path='/' element={<Home />} />
           <Route path="/products" element={<Products />} />
-          <Route path="/productdetail/:id" element={<ProductDetail />} />
+          <Route path="/productdetail/:id" element={<Productdetail />} />
           <Route path="/cart" element={<Cart />} />
         
       </Routes>
